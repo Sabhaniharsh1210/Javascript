@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		// function sum()
+		// {
+		// 	var x =	document.getElementById('value_1').value
+		// 	var y = document.getElementById('value_2').value
+
+		// 	var z = parseInt(x) + parseInt(y);
+
+		// 	document.getElementById('ans').value = z;
+		// }
+
+		// function sub()
+		// {
+		// 	var x =	document.getElementById('value_1').value
+		// 	var y = document.getElementById('value_2').value
+
+		// 	var z = parseInt(x) - parseInt(y);
+
+		// 	document.getElementById('ans').value = z;
+		// }
+
+		// function mul()
+		// {
+		// 	var x =	document.getElementById('value_1').value
+		// 	var y = document.getElementById('value_2').value
+
+		// 	var z = parseInt(x) * parseInt(y);
+
+		// 	document.getElementById('ans').value = z;
+		// }
+
+		// function div()
+		// {
+		// 	var x =	document.getElementById('value_1').value
+		// 	var y = document.getElementById('value_2').value
+
+		// 	var z = parseInt(x) / parseInt(y);
+
+		// 	document.getElementById('ans').value = z;
+		// }
+
+
+		function cal(s)
+		{
+			var x =	document.getElementById('value_1').value
+			var y =	document.getElementById('value_2').value
+
+			sign=s;
+
+			var a = parseInt(x)+parseInt(y);
+			var b = parseInt(x)-parseInt(y);
+			var c = parseInt(x)*parseInt(y);
+			var d = parseInt(x)/parseInt(y);
+
+
+			if (sign=='+')
+			{
+				// var a = parseInt(x)+parseInt(y);
+				document.getElementById('ans').value = a;
+			}
+			if (sign=='-')
+			{
+				// var a = parseInt(x)-parseInt(y);
+				document.getElementById('ans').value = b;
+			}
+			if (sign=='*')
+			{
+				// var a = parseInt(x)*parseInt(y);
+				document.getElementById('ans').value = c;
+			}
+			if (sign=='/')
+			{
+				// var a = parseInt(x)/parseInt(y);
+				document.getElementById('ans').value = d;
+			}
+			
+		
+
+		}
+
+
+	</script>
+	
+
+</head>
+<body>
+
+<div>
+	<input type="text" id="value_1" name="" placeholder="value 1">
+</div>
+<div>
+	<input type="text" id="value_2" name="" placeholder="value 2">
+</div>
+<div>
+	<!-- <input type="button" value="+" onclick="sum();" name="">
+	<input type="button" value="-" onclick="sub();" name="">
+	<input type="button" value="*" onclick="mul();" name="">
+	<input type="button" value="/" onclick="div();" name="">
+	<br> -->
+
+	<input type="button" value="+" id="sum" onclick="cal('+');" name="">
+	<input type="button" value="-" id="sub" onclick="cal('-');" name="">
+	<input type="button" value="*" id="mul" onclick="cal('*');" name="">
+	<input type="button" value="/" id="div" onclick="cal('/');" name=""><br>
+	<input type="text" readonly id="ans" name="">
+</div>
+
+</body>
+</html>

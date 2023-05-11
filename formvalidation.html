@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		input[type="checkbox"]{
+			margin-left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<form onsubmit="return validdata()">
+		Name: <input type="text" name="" id="name"><br>
+		Email: <input type="text" name="" id="email"><br>
+		Contact No. <input type="text" name="" id="number" minlength="10" maxlength="10"><br>
+		Gender: <input type="radio" id="male" name="gender">Male
+		<input type="radio" id="female" name="gender">Female<br>
+
+		Hobbies:<br><input type="checkbox" name="">Travelling<br>
+				<input type="checkbox" name="">Sport<br>
+				<input type="checkbox" name="">Music<br>
+				<input type="checkbox" name="">Advanture<br>
+				<input type="checkbox" name="">Camping<br>
+		City:<select id="city">
+			<option value="">Select city</option>
+			<option value="surat">Surat</option>
+			<option value="ahemdabad">Ahemdabad</option>
+			<option value="rajkot">Rajkot</option>
+			<option value="gandhinagar">Gandhinagar</option>
+			<option value="vadodra">Vadodra</option>
+			<option value="vapi">Vapi</option>
+			<option value="valsad">Valsad</option>
+		</select><br>
+		Password: <input type="text" name="" id="pass" minlength="8" maxlength="14"><br>
+
+		<input type="submit" value="Click Here">
+	</form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	function validdata() 
+	{
+		var name = document.getElementById('name').value
+		var email = document.getElementById('email').value
+		var con = document.getElementById('number').value
+		var male = document.querySelector( 'input[name="gender"]:checked');
+		var female = document.querySelector( 'input[name="gender"]:checked');
+		var travelling = document.querySelector( 'input[type="checkbox"]:checked');
+		var sport = document.querySelector( 'input[type="checkbox"]:checked');
+		var music = document.querySelector( 'input[type="checkbox"]:checked');
+		var advanture = document.querySelector( 'input[type="checkbox"]:checked');
+		var camping = document.querySelector( 'input[type="checkbox"]:checked');
+		var city = document.getElementById('city').value
+
+		var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		var regexpass = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+		var pass = document.getElementById('pass').value
+
+		if(name == '')
+		{
+			alert("Enter name")
+			return false;
+		}
+		if(!email.match(regex))
+		{
+			alert("Invalid email address")
+			return false;
+		}
+		if(con == '')
+		{
+			alert("Enter your number")
+			return false;
+		}
+		if(male == null && female == null)
+		{
+			alert("Select your gender")
+			return false;
+		}
+		if(travelling == null && sport == null && music == null && advanture == null && camping == null)
+		{
+			alert("Select your hobby")
+			return false;
+		}
+		if(city == '')
+		{
+			alert("Select you city")
+			return false;
+		}
+		if(!pass.match(regexpass))
+		{
+			alert("Enter valid password")
+			return false;
+		}
+		
+	}
+</script>

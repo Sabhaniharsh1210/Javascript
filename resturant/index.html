@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col main_head text-center">Harsh da dhaba</div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/gujarati dis.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 150/- Only</h3>
+                  <input type="checkbox" class="checkbox" value="150" onchange="get1();" name="" id="guj">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/punjabi dis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 199/- Only</h3>
+                  <input type="checkbox" class="checkbox" value="199" name="" onchange="get2();" id="pun">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/south indian dis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 180/- Only</h3>
+                  <input type="checkbox" value="180" class="checkbox" name="" onchange="get3();" id="south">
+                </div>
+              </div>
+
+        </div>
+
+        <div class="row my-5">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/dosa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 160/- Only</h3>
+                  <input type="checkbox" value="160" onchange="get4();" class="checkbox" name="" id="dhosa">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/idali-sambhar.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 70/- Only</h3>
+                  <input type="checkbox" value="70" onchange="get5();" class="checkbox" name="" id="idali">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/mendu vada.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 80/- Only</h3>
+                  <input type="checkbox" value="80" onchange="get6();" class="checkbox" value="299" name="" id="mendu">
+                </div>
+              </div>
+
+        </div>
+
+        <div class="row mb-5">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/dalbati.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 299/- Only</h3>
+                  <input type="checkbox" class="checkbox" name="" id="">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/dalmakhni.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 299/- Only</h3>
+                  <input type="checkbox" class="checkbox" name="" id="">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/dal tadka.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 299/- Only</h3>
+                  <input type="checkbox" class="checkbox" name="" id="">
+                </div>
+              </div>
+
+        </div>
+
+        <div class="row mb-5">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="img/dal bhat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 299/- Only</h3>
+                  <input type="checkbox" class="checkbox" name="" id="">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/vadhareli khichdi.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 299/- Only</h3>
+                  <input type="checkbox" class="checkbox" name="" id="">
+                </div>
+              </div>
+
+              <div class="card text-center ms-auto" style="width: 18rem;">
+                <img src="img/ringal no olo.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">DHOSA</h1>
+                  <h3>RS. 299/- Only</h3>
+                  <input type="checkbox" class="checkbox" name="" id="">
+                </div>
+              </div>
+
+        </div>
+
+        
+    </div>
+
+  Bill Amount  <input class="fixed-bottom" type="text" id="amount">
+</body>
+</html>
+
+<script>
+    var total = 0;
+    function get1() 
+    {
+        var x = document.getElementById('guj').value
+        var z = document.getElementById('guj')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get2() 
+    {
+        var x = document.getElementById('pun').value
+        var z = document.getElementById('pun')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+    function get3() 
+    {
+        var x = document.getElementById('south').value
+        var z = document.getElementById('south')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get4() 
+    {
+        var x = document.getElementById('dhosa').value
+        var z = document.getElementById('dhosa')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get5() 
+    {
+        var x = document.getElementById('idali').value
+        var z = document.getElementById('idali')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get6() 
+    {
+        var x = document.getElementById('mendu').value
+        var z = document.getElementById('mendu')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+    function get7() 
+    {
+        var x = document.getElementById('south').value
+        var z = document.getElementById('south')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get8() 
+    {
+        var x = document.getElementById('dhosa').value
+        var z = document.getElementById('dhosa')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get9() 
+    {
+        var x = document.getElementById('guj').value
+        var z = document.getElementById('guj')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get10() 
+    {
+        var x = document.getElementById('pun').value
+        var z = document.getElementById('pun')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+    function get11() 
+    {
+        var x = document.getElementById('south').value
+        var z = document.getElementById('south')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+    function get12() 
+    {
+        var x = document.getElementById('dhosa').value
+        var z = document.getElementById('dhosa')
+        var a =parseInt(x)
+        if(z.checked == true)
+        {
+            total = total + a;
+        }
+        else{
+            total = total - a;
+        }
+        console.log(total)
+
+        console.log(x)
+        document.getElementById('amount').value = total;
+    }
+
+</script>

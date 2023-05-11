@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100%;
+			height: 500px;
+			display: flex;
+
+		}
+		.img{
+			width: 100%;
+			height: 100%;
+		}
+		.pre{
+			position: absolute;
+			top: 25%;
+		}
+		.next{
+			position: absolute;
+			top: 25%;
+			right: 10px;
+		}
+		.pre,.next{
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			font-size: 40px;
+			background-color: aqua;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<img src="https://live.staticflickr.com/3713/9970472513_f784490596_b.jpg" class="img">
+	<img src="https://i.pinimg.com/originals/ce/f6/48/cef648930579c38206b0d7e5d6e892f8.png" class="img">
+	<img src="https://images6.alphacoders.com/641/thumb-1920-641235.jpg" class="img">
+	<img src="https://i.postimg.cc/WbC3Gkb3/Pirati-Dei-Caraibi-4-2011-i-TA-ENG-BDrip-AVC-720p.png" class="img">
+	<img src="https://i.pinimg.com/originals/d2/61/6c/d2616c8095e67be95ead6d0767059620.jpg" class="img">
+	<img src="https://pbs.twimg.com/media/FDif8NvWUAU2a7W.jpg" class="img">
+	<img src="http://images4.fanpop.com/image/photos/19800000/POTC-The-Curse-Of-The-Black-Pearl-pirates-of-the-caribbean-19845471-1280-544.jpg" class="img">
+	<input type="button" name="" class="pre" value="<" onclick="pre();">
+	<input type="button" name="" class="next" value=">" onclick="next();">
+	</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	var tempt = 0;
+	var img;
+	function sliderdata() 
+	{
+		 img = document.getElementsByClassName('img')
+
+		for (var i = 0; i < img.length; i++)
+		{
+			img[i].style.display="none";
+		}
+
+		img[tempt].style.display="block"
+
+		console.log(img.length)
+	}
+
+
+
+	 
+
+	function pre() 
+	{
+		if(tempt==0)
+		{
+			tempt=img.length;
+		}
+		tempt--;
+		sliderdata();
+	}
+
+	function next() 
+	{
+		if( tempt == (img.length-1))
+		{
+			tempt=-1;
+		}
+		tempt++;
+		sliderdata();
+	}
+
+	window.onload = function()
+	{
+		sliderdata();
+	}
+
+
+</script>

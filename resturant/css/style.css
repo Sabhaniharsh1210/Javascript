@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(157, 170, 192);
+}
+.main_head{
+    font-size: 100px;
+    font-weight: bold;
+}
+.img{
+    height: 150px;
+    width: 150px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.checkbox{
+    height: 40px;
+    width: 40px;
+    
+}

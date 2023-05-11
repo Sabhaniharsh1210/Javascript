@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="checkbox" class="text" id="a1" onchange="harsh('1');" value="Harsh" name="">Harsh<br>
+	<input type="checkbox" class="text" id="a2" onchange="harsh('2');" value="Jaydeep" name="">Jaydeep<br>
+	<input type="checkbox" class="text" id="a3" onchange="harsh('3');" value="Mayur" name="">Mayur<br>
+	<input type="checkbox" class="text" id="a4" onchange="harsh('4');" value="Jay" name="">Jay<br>
+	<input type="checkbox" class="text" id="a5" onchange="harsh('5');" value="Yash" name="">Yash<br>
+	<input type="checkbox" class="text" id="a6" onchange="harsh('6');" value="Dharmit" name="">Dharmit<br>
+	<input type="checkbox" class="text" id="a7" onchange="harsh('7');" value="Dev" name="">Dev<br>
+	<input type="checkbox" class="text" id="a8" onchange="harsh('8');" value="Savan" name="">Savan<br>
+	<input type="checkbox" class="text" id="a9" onchange="harsh('9');" value="Amit" name="">Amit<br>
+	<input type="checkbox" class="text" id="a10" onchange="harsh('10');" value="Balo" name="">Balo<br>
+
+
+	<input type="text" id="dis" name="">
+</body>
+</html> 
+<script type="text/javascript">
+
+	// var arr=["","","","","","","","","",""]
+	var arr=[]
+	var c = 0
+	function harsh(n) 
+	{
+		// var x = parseInt(n)
+		// var a = document.getElementById('a'+x)
+		// var b = document.getElementById('a'+x).value
+		
+		// if(a.checked == true)
+		// {	
+		// 	arr.push(b)
+		// 	// arr[x-1]=b
+		// 	document.getElementById('dis').value = arr 
+		// 	c++;
+		// }
+		// else 
+		// {
+		// 	delete arr[c--]
+		// 	document.getElementById('dis').value = arr
+		// }
+		var x = document.getElementsByClassName('text')
+		var arr=[]
+
+		for (var i = 0; i < x.length; i++) 
+		{
+			if(x[i].checked == true)
+			{
+				arr.push(x[i].value)
+			}
+
+
+		}
+		document.getElementById('dis').value = arr
+	}
+	// console.log(arr)
+
+</script>

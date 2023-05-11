@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.row{
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<input type="checkbox" id="a1" onchange="harsh();" name="">
+		<input type="checkbox" name="" id="a2" onchange="c2();">
+		<input type="checkbox" name="" id="a3" onchange="c3();">
+		<input type="checkbox" name="" id="a4" onchange="c4();">
+		<input type="checkbox" name="" id="a5" onchange="c5();">
+		<input type="checkbox" name="" id="a6" onchange="c6();">
+		<input type="checkbox" name="" id="a7" onchange="c7();">
+		<input type="checkbox" name="" id="a8" onchange="c8();">
+		<input type="checkbox" name="" id="a9" onchange="c9();">
+		<input type="checkbox" name="" id="a10" onchange="c10();">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a11" onchange="r2();">
+		<input type="checkbox" name="" id="a12">
+		<input type="checkbox" name="" id="a13">
+		<input type="checkbox" name="" id="a14">
+		<input type="checkbox" name="" id="a15">
+		<input type="checkbox" name="" id="a16">
+		<input type="checkbox" name="" id="a17">
+		<input type="checkbox" name="" id="a18">
+		<input type="checkbox" name="" id="a19">
+		<input type="checkbox" name="" id="a20">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a21" onchange="r3();">
+		<input type="checkbox" name="" id="a22">
+		<input type="checkbox" name="" id="a23">
+		<input type="checkbox" name="" id="a24">
+		<input type="checkbox" name="" id="a25">
+		<input type="checkbox" name="" id="a26">
+		<input type="checkbox" name="" id="a27">
+		<input type="checkbox" name="" id="a28">
+		<input type="checkbox" name="" id="a29">
+		<input type="checkbox" name="" id="a30">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a31" onchange="r4();">
+		<input type="checkbox" name="" id="a32">
+		<input type="checkbox" name="" id="a33">
+		<input type="checkbox" name="" id="a34">
+		<input type="checkbox" name="" id="a35">
+		<input type="checkbox" name="" id="a36">
+		<input type="checkbox" name="" id="a37">
+		<input type="checkbox" name="" id="a38">
+		<input type="checkbox" name="" id="a39">
+		<input type="checkbox" name="" id="a40">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a41" onchange="r5();">
+		<input type="checkbox" name="" id="a42">
+		<input type="checkbox" name="" id="a43">
+		<input type="checkbox" name="" id="a44">
+		<input type="checkbox" name="" id="a45">
+		<input type="checkbox" name="" id="a46">
+		<input type="checkbox" name="" id="a47">
+		<input type="checkbox" name="" id="a48">
+		<input type="checkbox" name="" id="a49">
+		<input type="checkbox" name="" id="a50">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a51" onchange="r6();">
+		<input type="checkbox" name="" id="a52">
+		<input type="checkbox" name="" id="a53">
+		<input type="checkbox" name="" id="a54">
+		<input type="checkbox" name="" id="a55" onchange="cross();">
+		<input type="checkbox" name="" id="a56">
+		<input type="checkbox" name="" id="a57">
+		<input type="checkbox" name="" id="a58">
+		<input type="checkbox" name="" id="a59">
+		<input type="checkbox" name="" id="a60">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a61" onchange="r7();">
+		<input type="checkbox" name="" id="a62">
+		<input type="checkbox" name="" id="a63">
+		<input type="checkbox" name="" id="a64">
+		<input type="checkbox" name="" id="a65">
+		<input type="checkbox" name="" id="a66">
+		<input type="checkbox" name="" id="a67">
+		<input type="checkbox" name="" id="a68">
+		<input type="checkbox" name="" id="a69">
+		<input type="checkbox" name="" id="a70">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a71" onchange="r8();">
+		<input type="checkbox" name="" id="a72">
+		<input type="checkbox" name="" id="a73">
+		<input type="checkbox" name="" id="a74">
+		<input type="checkbox" name="" id="a75">
+		<input type="checkbox" name="" id="a76">
+		<input type="checkbox" name="" id="a77">
+		<input type="checkbox" name="" id="a78">
+		<input type="checkbox" name="" id="a79">
+		<input type="checkbox" name="" id="a80">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a81" onchange="r9();">
+		<input type="checkbox" name="" id="a82">
+		<input type="checkbox" name="" id="a83">
+		<input type="checkbox" name="" id="a84">
+		<input type="checkbox" name="" id="a85">
+		<input type="checkbox" name="" id="a86">
+		<input type="checkbox" name="" id="a87">
+		<input type="checkbox" name="" id="a88">
+		<input type="checkbox" name="" id="a89">
+		<input type="checkbox" name="" id="a90">
+	</div>
+	<div class="row">
+		<input type="checkbox" name="" id="a91" onchange="r10();">
+		<input type="checkbox" name="" id="a92">
+		<input type="checkbox" name="" id="a93">
+		<input type="checkbox" name="" id="a94">
+		<input type="checkbox" name="" id="a95">
+		<input type="checkbox" name="" id="a96">
+		<input type="checkbox" name="" id="a97">
+		<input type="checkbox" name="" id="a98">
+		<input type="checkbox" name="" id="a99">
+		<input type="checkbox" name="" id="a100">
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function harsh() 
+	{
+		var a = document.getElementById('a1')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 1; i <= 100; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 1; i <= 100; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r2() 
+	{
+		var a = document.getElementById('a11')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 11; i <= 20; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 11; i <= 20; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r3() 
+	{
+		var a = document.getElementById('a21')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 21; i <= 30; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 21; i <= 30; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r4() 
+	{
+		var a = document.getElementById('a31')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 31; i <= 40; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 31; i <= 40; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r5() 
+	{
+		var a = document.getElementById('a41')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 41; i <= 50; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 41; i <= 50; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r6() 
+	{
+		var a = document.getElementById('a51')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 51; i <= 60; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 51; i <= 60; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r7() 
+	{
+		var a = document.getElementById('a61')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 61; i <= 70; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 61; i <= 70; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r8() 
+	{
+		var a = document.getElementById('a71')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 71; i <= 80; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 71; i <= 80; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r9() 
+	{
+		var a = document.getElementById('a81')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 81; i <= 90; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 81; i <= 90; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function r10() 
+	{
+		var a = document.getElementById('a91')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 91; i <= 100; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 91; i <= 100; i++)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c2() 
+	{
+		var a = document.getElementById('a2')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 2; i <= 100;i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 2; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c3() 
+	{
+		var a = document.getElementById('a3')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 3; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 3; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c4() 
+	{
+		var a = document.getElementById('a4')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 4; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 4; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c5() 
+	{
+		var a = document.getElementById('a5')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 5; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 5; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c6() 
+	{
+		var a = document.getElementById('a6')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 6; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 6; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c7() 
+	{
+		var a = document.getElementById('a7')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 7; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 7; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c8() 
+	{
+		var a = document.getElementById('a8')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 8; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 8; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c9() 
+	{
+		var a = document.getElementById('a9')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 9; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 9; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function c10() 
+	{
+		var a = document.getElementById('a10')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 10; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 10; i <= 100; i+=10)
+			 {
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	function cross() 
+	{
+		var a = document.getElementById('a55')
+
+		if(a.checked == true)
+		{
+			
+			for (var i = 5; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+			for (var i = 51; i <= 60; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+			for (var i = 6; i <= 100; i+=10) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+			for (var i = 41; i <= 50; i++) 
+			{
+				document.getElementById('a'+i).checked = true
+			}
+		}
+		else
+		{
+			for (var i = 5; i <= 100; i+=10)
+			{
+				document.getElementById('a'+i).checked = false
+			}
+			for (var i = 51; i <= 60; i++) 
+			{
+				document.getElementById('a'+i).checked = false
+			}
+			for (var i = 6; i <= 100; i+=10)
+			{
+				document.getElementById('a'+i).checked = false
+			}
+			for (var i = 41; i <= 50; i++) 
+			{
+				document.getElementById('a'+i).checked = false
+			}
+		}
+	}
+
+	
+
+
+
+
+
+
+
+</script>
